@@ -1,19 +1,15 @@
 package jp.ac.uryukyu.ie.tnal;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created by tnal on 2016/11/13.
- */
 public class EnemyTest {
     /**
      * 「死んでる状態では攻撃できない」ことを確認。
-     * @throws Exception
      */
     @Test
-    public void attack() throws Exception {
+    public void attack() {
         int heroHP = 10;
         Hero hero = new Hero("テスト勇者", heroHP, 5);
         Enemy enemy = new Enemy("テストスライム", 6, 3);
